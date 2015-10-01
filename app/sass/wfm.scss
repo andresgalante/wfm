@@ -1,1 +1,135 @@
-@import '../node_modules/angular-material/angular-material';
+body{
+//  background: green;
+}
+
+$white: #fff;
+$white-mid: rgba(255,255,255,.7);
+$black-mid: #555;
+
+$steps: #b8c6d4;
+$steps-active: #46b3e7;
+
+$primary: #3F51B5;
+
+ .md-toolbar-tools h1 {
+   font-size: inherit;
+   font-weight: inherit;
+   margin: inherit;
+ }
+
+.workflow-steps{
+  background: $primary;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: $white;
+  border-bottom: 2px solid $steps;
+  
+  h3,h5{
+    margin: 5px 0 10px 0;
+//    background: orange;
+  }
+  h5{
+//    background: green;
+      text-transform: uppercase;
+      margin: 10px 0 0 0;
+      color: $white-mid;
+    }
+    
+  ul{
+    list-style: none;
+    margin: 0 0 -1rem 0;
+    padding: 0;
+//    position: relative;
+//    bottom: -1rem;
+  }
+  li{
+    display: inline-block;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background: $steps;
+    margin: 0 5px;
+    font-weight: 500;
+    &.active{
+      background: $steps-active;
+    }
+  }
+}
+
+
+.workflow-actions{
+//  background: $primary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .md-button{
+ //   display: block;
+ //   width: 90%;
+  }
+}
+
+
+// 
+// 
+// .md-toolbar-tools h1 {
+//   font-size: inherit;
+//   font-weight: inherit;
+//   margin: inherit;
+// }
+// 
+// md-list{
+//   margin: 0;
+//   padding: 0;
+// }
+// 
+// /* Sidenav area */
+// 
+// md-sidenav md-list{
+//   padding: 0;
+//   font-size: 14px;
+//   font-weight: 500;
+// }
+// 
+// md-list-item button{
+//   border-radius: 0!important;  
+// }
+// 
+// md-list-item.list-header .md-button{
+//   min-height: 64px;
+//   color: #fff;
+//   background: #3F51B5;
+// }
+// 
+// md-toolbar{
+//   z-index: 99999999;
+// }
+// .dividerdemoBasicUsage .face {
+//   border-radius: 30px;
+//   border: 1px solid #ddd;
+//   width: 48px;
+//   margin: 16px; }
+// 
+// 
+// /* Jobs list =========================== */
+// .inner-column{ border-right: 1px solid rgba(0,0,0,.12)}
+// 
+// .inner-column md-list-item {
+//   border-bottom: 1px solid rgba(0,0,0,.12);
+//    }
+// 
+// .jobs-list md-list-item.list-header .md-button{
+//   background: rgba(0,0,0,.56);
+// }
+// .workers-list md-list-item.list-header .md-button{
+//   background: rgba(0,0,0,.56);  
+// }
+// 
+// /* FAB =========================== */
+// .md-fab{
+//   background: red;
+//   position: absolute;
+//   bottom: 16px;
+//   right: 16px;
+// }

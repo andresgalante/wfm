@@ -1,73 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="css/wfm.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1" />
     <style type="text/css" media="screen">
-
-
-.md-toolbar-tools h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: inherit;
-}
-
-md-list{
-  margin: 0;
-  padding: 0;
-}
-
-/* Sidenav area */
-
-md-sidenav md-list{
-  padding: 0;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-md-list-item button{
-  border-radius: 0!important;  
-}
-
-md-list-item.list-header .md-button{
-  min-height: 64px;
-  color: #fff;
-  background: #3F51B5;
-}
-
-md-toolbar{
-  z-index: 99999999;
-}
-.dividerdemoBasicUsage .face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px; }
-
-
-/* Jobs list =========================== */
-.inner-column{ border-right: 1px solid rgba(0,0,0,.12)}
-
-.inner-column md-list-item {
-  border-bottom: 1px solid rgba(0,0,0,.12);
-   }
-
-.jobs-list md-list-item.list-header .md-button{
-  background: rgba(0,0,0,.56);
-}
-.workers-list md-list-item.list-header .md-button{
-  background: rgba(0,0,0,.56);  
-}
-
-/* FAB =========================== */
-.md-fab{
-  background: red;
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-}
 
 
     </style>
@@ -80,183 +20,45 @@ md-toolbar{
       <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
         <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
       </md-button>
-      <h1>FeedHenry Work Force Management</h1>
+      <h1>FeedHenry</h1>
     </div>
   </md-toolbar>
   
   
 
-  <div layout="row">
+  <div layout="row" flex>
     
     <md-sidenav layout="column" flex="10" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
-      
-      <md-list>
-      
-        <md-list-item ng-click="goToPerson()" class="list-header">
-          <img alt="Queen" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Elizabeth Alexandra Mary</p>
-        </md-list-item>
-        
-        <md-divider></md-divider>
-
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">event</md-icon>
-          <p>Scheduler</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">assignment</md-icon>
-          <p>Jobs</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">person</md-icon>
-          <p>Workers</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">map</md-icon>
-          <p>Maps</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">mail</md-icon>
-          <p>Messages</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">insert_chart</md-icon>
-          <p>Analytics</p>
-        </md-list-item>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">content_copy</md-icon>
-          <p>Forms</p>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item ng-click="navigateTo()">
-          <md-icon md-font-set="material-icons">settings</md-icon>
-          <p>Settings</p>
-        </md-list-item>
-      </md-list>
+      MENU
     </md-sidenav>
 
 
-    <md-button class="md-fab" aria-label="Eat cake">
-          <md-icon md-font-set="material-icons">add</md-icon>
-    </md-button>
-    
-
-
-    <div layout="row" id="content">
-
-
-      <div layout="column" class="inner-column">
       
-        <md-list class="jobs-list">
-        
-        <md-list-item ng-click="goToPerson()" class="list-header">
-          <p>Jobs Assinged</p>
-        </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-
-          <md-list-item class="md-3-line" ng-click="navigateTo()">
-            <div class="md-list-item-text">
-              <h3>Job No. 2133623</h3>
-              <h4>Brust Pipe</h4>
-              <p>42 Templet Bar, Dublin, 2</p>
-            </div>
-          </md-list-item>
-          
-        </md-list>
-    
-      </div>
-
-
-
-      <div layout="column" class="inner-column">
+    <md-content layout="column" id="content">
       
-        <md-list class="workers-list">
-        
-        <md-list-item ng-click="goToPerson()" class="list-header">
-          <p>Workers</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker name</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker another name</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker name goes here</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker middle name</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker last name</p>
-        </md-list-item>
-
-        <md-list-item ng-click="goToPerson()">
-          <img alt="Name" ng-src="https://dl.dropboxusercontent.com/u/4371641/queen.jpg" class="md-avatar" />
-          <p>Worker name</p>
-        </md-list-item>
-  
-            
-        </md-list>
-    
-      </div>
-
-
+      <div class="workflow-steps">
+        <h5 class="md-caption">Step 1</h5>
+        <h3 class="md-headline">Name of the step</h3>
+        <ul>
+          <li class="md-caption active">1</li>
+          <li class="md-caption">2</li>
+          <li class="md-caption">3</li>
+          <li class="md-caption">4</li>          
+        </ul>
+      </div><!-- workflow-steps -->
       
-      <md-content layout="column" flex class="md-padding">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </md-content>
+      <div class="workflow-content md-padding">
+        <p>Here goes the content lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div><!-- workflow-content -->
+
+      <div class="workflow-actions md-padding md-whiteframe-z2">
+        <md-button class="md-primary">Start</md-button>
+      </div><!-- workflow-actions-->
       
-    
+      
+      
+    </md-content>
+      
     
   </div> <!-- container layout:row -->
 
