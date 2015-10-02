@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="css/wfm.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1" />
+
+  </head>
+
+<body layout="column" ng-controller="AppCtrl" ng-app="StarterApp">
+  
+  <md-toolbar layout="row" class="md-primary md-hue-2 md-whiteframe-z1">
+    <div class="md-toolbar-tools">
+      <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
+        <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
+      </md-button>
+      <h1>FeedHenry</h1>
+    </div>
+  </md-toolbar>
+  
+  
+
+  <div layout="row" flex>
+    
+    <md-sidenav layout="column" flex="10" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+      MENU
+    </md-sidenav>
+      
+    <md-content layout="column" flex id="content">
+      
+    <div class="workflow"  layout="column">
+        
+      <div class="workflow-steps">
+        <h5 class="md-caption">Step 2</h5>
+        <h3 class="md-headline">Name of the step</h3>
+        <ul>
+          <li class="md-caption">1</li>
+          <li class="md-caption active">2</li>
+          <li class="md-caption">3</li>
+          <li class="md-caption">4</li>          
+        </ul>
+      </div><!-- workflow-steps -->
+      
+      <div class="workflow-content">
+
+
+      <form name="userForm" class="padding">
+        <md-input-container>
+          <label>Name</label>
+          <input type="text">
+        </md-input-container>
+        
+        <md-input-container>
+          <label>Email</label>
+          <input type="email">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Number</label>
+          <input type="number">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Password</label>
+          <input type="password">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Phone</label>
+          <input type="phone">
+        </md-input-container>
+
+
+        <md-input-container>
+          <label>URL</label>
+          <input type="url">
+        </md-input-container>
+
+        <md-input-container>
+          <label>TextArea</label>
+          <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea>
+        </md-input-container>
+        
+        <md-input-container>
+          <label>State</label>
+          <md-select ng-model="ctrl.userState">
+            <md-option ng-repeat="state in ctrl.states" value="{{state.abbrev}}">
+              {{state.abbrev}}
+            </md-option>
+          </md-select>
+        </md-input-container> 
+        
+        <div class="checkbox-group">
+          <md-checkbox>
+            Checkbox 1
+          </md-checkbox>       
+          <md-checkbox>
+            Checkbox 2
+          </md-checkbox>       
+          <md-checkbox>
+            Checkbox 3
+          </md-checkbox>       
+        </div>
+    
+        <md-radio-group>
+          <md-radio-button>Apple</md-radio-button>
+          <md-radio-button> Banana </md-radio-button>
+          <md-radio-button>Mango</md-radio-button>
+        </md-radio-group>
+
+        <div class="switch-group">
+          <md-switch>
+            Switch 1
+          </md-switch>
+          <md-switch>
+            Switch 2
+          </md-switch>
+          <md-switch>
+            Switch 3
+          </md-switch>
+        </div>
+        
+    </form>
+    
+
+        
+
+    
+      </div><!-- workflow-content -->
+
+
+      <div class="workflow-actions md-padding md-whiteframe-z4">
+        <md-button class="md-primary">Back</md-button>
+        <md-button class="md-primary">Continue</md-button>
+      </div><!-- workflow-actions-->
+      
+      
+      
+      
+    </div><!-- workflow -->  
+      
+    </md-content>      
+    
+  </div> <!-- container layout:row -->
+
+
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.1/angular-material.min.js"></script>
+   
+    <script>
+    var app = angular.module('StarterApp', ['ngMaterial']);
+      
+      app.controller('AppCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
+        $scope.toggleSidenav = function(menuId) {
+          $mdSidenav(menuId).toggle();
+        };
+       
+      }]);       
+      
+</script>
+
+    
+  </body>
+</html>

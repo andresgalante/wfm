@@ -3,6 +3,9 @@
   font-weight: inherit;
   margin: inherit; }
 
+.workflow {
+  margin-bottom: 64px; }
+
 .workflow-steps {
   background: #3F51B5;
   text-align: center;
@@ -31,8 +34,28 @@
     .workflow-steps li.active {
       background: #46b3e7; }
 
+.padding {
+  padding: 0 16px; }
+
+.workflow-descirption {
+  margin: 0; }
+  .workflow-descirption p {
+    margin-top: 0; }
+
 .workflow-actions {
-  position: absolute;
+  background: #fff;
+  position: fixed;
+  text-align: right;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 99; }
+
+form md-radio-button {
+  margin: 0 0 20px 0; }
+
+.checkbox-group md-checkbox {
+  margin: 0 0 20px 0; }
+
+.switch-group md-switch {
+  margin: 0 0 20px 0; }
