@@ -32,9 +32,9 @@
       MENU
     </md-sidenav>
       
-    <md-content layout="column" id="content">
+    <md-content layout="column" flex id="content">
       
-    <div class="workflow" layout="column">
+    <div class="workflow" layout="column" flex>
         
       <div class="workflow-steps">
         <h5 class="md-caption">Step 1</h5>
@@ -51,7 +51,7 @@
 
 
       <md-list>
-        <md-list-item ng-click="navigateTo(setting.extraScreen, $event)">
+        <md-list-item>
           <md-icon md-font-set="material-icons">place</md-icon>
           <p>5528 Closed loop</p>
           <md-divider></md-divider>
@@ -72,18 +72,11 @@
       </md-list>
       
       <md-subheader>Work Summary</md-subheader>
-
-      <div class="padding workflow-descirption">      
-        <p class="md-body-1">Please remove damaged kerb and SUPPLY AND FIX 1X DROP KERB CENTRE BN 125 X 150 cart away from site outside number 3.
-          
-        </p>  
+      <p class="md-body-1"  layout-padding layout-margin>Please remove damaged kerb and SUPPLY AND FIX 1X DROP KERB CENTRE BN 125 X 150 cart away from site outside number 3.</p>  
       </div>
-    
-      </div><!-- workflow-content -->
 
       <div class="workflow-actions md-padding md-whiteframe-z4">
-<!--         <md-button class="md-primary">Back</md-button> -->
-        <md-button class="md-primary">Beguin Workflow</md-button>
+        <md-button class="md-primary">Begin Workflow</md-button>
       </div><!-- workflow-actions-->
       
       

@@ -7,18 +7,15 @@ $steps: #b8c6d4;
 $steps-active: #46b3e7;
 
 $primary: #3F51B5;
-
-
   
- .md-toolbar-tools h1 {
-   font-size: inherit;
-   font-weight: inherit;
-   margin: inherit;
- }
-
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
 
 .workflow{
-margin-bottom: 64px; 
+  margin-bottom: 64px; 
 }
 
 .workflow-steps{
@@ -58,16 +55,11 @@ margin-bottom: 64px;
 }
 
 
-.padding{
-  padding: 0 16px;
-}
-
-.workflow-descirption{
-  margin: 0;
-  p{
-    margin-top: 0;
-  }
-}
+// .padding{
+//   padding: 0 16px;
+// }
+//
+ 
 
 .workflow-actions{
   background: #fff;
@@ -77,25 +69,21 @@ margin-bottom: 64px;
   left: 0;
   right: 0;
   z-index: 99;
-  .md-button{
- //   display: block;
- //   width: 90%;
-  }
 }
 
-form md-radio-button{
-  margin: 0 0 20px 0;
-}
-
-.checkbox-group{
-  md-checkbox{
-    margin: 0 0 20px 0;
-  }
-}
-
-.switch-group{
-  md-switch{
-    margin: 0 0 20px 0;
-  }
-}
+// form md-radio-button{
+//   margin: 0 0 20px 0;
+// }
+// 
+// .checkbox-group{
+//   md-checkbox{
+//     margin: 0 0 20px 0;
+//   }
+// }
+// 
+// .switch-group{
+//   md-switch{
+//     margin: 0 0 20px 0;
+//   }
+// }
 

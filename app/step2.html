@@ -31,7 +31,7 @@
       
     <md-content layout="column" flex id="content">
       
-    <div class="workflow"  layout="column">
+    <div class="workflow" layout="column" flex>
         
       <div class="workflow-steps">
         <h5 class="md-caption">Step 2</h5>
@@ -46,8 +46,7 @@
       
       <div class="workflow-content">
 
-
-      <form name="userForm" class="padding">
+      <div class="app-form" layout-padding layout-margin>
         <md-input-container>
           <label>Name</label>
           <input type="text">
@@ -92,8 +91,11 @@
             </md-option>
           </md-select>
         </md-input-container> 
-        
-        <div class="checkbox-group">
+
+        <div class="checkbox-container">
+          <md-checkbox>
+            Checkbox 1
+          </md-checkbox>   
           <md-checkbox>
             Checkbox 1
           </md-checkbox>       
@@ -102,7 +104,7 @@
           </md-checkbox>       
           <md-checkbox>
             Checkbox 3
-          </md-checkbox>       
+          </md-checkbox>
         </div>
     
         <md-radio-group>
@@ -111,29 +113,12 @@
           <md-radio-button>Mango</md-radio-button>
         </md-radio-group>
 
-        <div class="switch-group">
-          <md-switch>
-            Switch 1
-          </md-switch>
-          <md-switch>
-            Switch 2
-          </md-switch>
-          <md-switch>
-            Switch 3
-          </md-switch>
-        </div>
-        
-    </form>
-    
-
-        
-
     
       </div><!-- workflow-content -->
 
 
       <div class="workflow-actions md-padding md-whiteframe-z4">
-        <md-button class="md-primary">Back</md-button>
+        <md-button class="md-primary md-hue-1">Back</md-button>
         <md-button class="md-primary">Continue</md-button>
       </div><!-- workflow-actions-->
       
